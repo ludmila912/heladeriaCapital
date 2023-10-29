@@ -122,11 +122,6 @@ padding: 10px;color: #463f3a;
     display: flex;
     gap: 20px;
     list-style-type: none;
-    
-
-}
-.items_pie a:hover {
-
 }
 .h.sabores {
     display: flex;
@@ -134,6 +129,19 @@ padding: 10px;color: #463f3a;
     gap: 700px;
     font-family: 'Playfair Display', serif;
     color: #e0afa0;
+}
+@media (max-width:480px) {
+    .h.sabores {
+        gap: 50px;
+        height: 200px;
+        width: 700px;
+    }
+    .logo.h.sabores {
+        height: 200px;
+    }
+    .titulo_ {
+        height: 50px;
+    }
 }
 .titulo_ {
     padding-top: 50px;
@@ -152,9 +160,19 @@ padding: 10px;color: #463f3a;
 .lista_sabores {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         list-style-type: none;
         color: #463f3a;
+}
+@media (max-width:480px) {
+    .menu_sabores {
+        width: 485px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+    }
 }
 
 .secciones {
@@ -169,9 +187,9 @@ padding: 10px;color: #463f3a;
    "section1-s section2-s section3-s section4-s"
    "section1-s section2-s section3-s section4-s";
    font-size: 18px;
-   
-   
- 
+
+
+
 
 }
 .section1-s {
@@ -213,6 +231,41 @@ list-style-type: none;
     font-size: 20px;
 
 }
+@media (max-width: 480px) {
+    .secciones {
+        grid-template-areas: 
+        "section1-s"
+        "section2-s"
+        "section3-s"
+        "section4-s";
+        width: 490px;
+        height: 2000px;  
+    }
+    .seccion1-s {
+        width: 450px;
+        height: 700px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .seccion2-s {
+        width: 450px;
+        height: 700px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .seccion3-s {
+        width: 450px;
+        height: 700px;
+        margin: 0px;
+        padding:10px;
+    }
+    .seccion4-s {
+        width: 450px;
+        height: 700px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
 .titulo-sec {
     display: flex;
     text-align: center;
@@ -221,6 +274,24 @@ list-style-type: none;
     background-color: #bcb8b1;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
+}
+@media (max-width:480px) {
+    .footer-s {
+        width: 480px;
+    }
+    .pie {
+        height: 20px;
+        padding-left: 5px;
+        font-size: 15px;
+    }
+    .menu_pie {
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .lista_pie {
+        gap: 5px;
+        font-size: 15px;
+    }
 }
 .sabores_l {
     display: flex;
@@ -303,6 +374,21 @@ list-style-type: none;
     font-family: 'Playfair Display', serif;
     color: #e0afa0;
 }
+@media (max-width:480px) {
+    .h_sucursales {
+        gap: 50px;
+        height: 200px;
+        width: 700px;
+    }
+    .logo_sucursales {
+        height: 200px;
+    }
+    .titulo_ {
+        height: 50px;
+        
+    }
+    
+}
 .menu_sucursales {
     width: 700px;
     margin-left: 650px;
@@ -313,6 +399,13 @@ list-style-type: none;
     background-color: #bcb8b1;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
+}
+@media (max-width:480px) {
+    .menu_sucursales {
+        margin-left: 10px;
+        padding: 5px;
+    }
+    
 }
 .lista_sucursales {
     display: flex;
@@ -333,6 +426,23 @@ list-style-type: none;
     "direcciones direcciones direcciones .... mapa mapa"
     "direcciones direcciones direcciones .... mapa mapa";
 }
+@media (max-width:480px) {
+   .secciones_sucursales {
+    grid-template-areas: 
+    "search"
+    "direcciones"
+    "direcciones"
+    "direcciones"
+    "direcciones"
+    "mapa"
+    "mapa"
+    "mapa"
+    "mapa"
+    "mapa";
+    width: 700px;
+    height: 600px;
+   } 
+}
 .search {
     grid-area: search;
    margin: 20px;
@@ -343,11 +453,8 @@ list-style-type: none;
     width: 600px;
     font-size: 18px;
 }
- .rosa {
-    color: #e0afa0;
-    height: 40px;
-    width: 40px;
- }
+
+
 .direcciones {
     grid-area: direcciones;
     margin: 30px;
@@ -356,19 +463,34 @@ list-style-type: none;
     border-style: groove;
     background-color: #e0afa0;
     font-size: 20px;
-    overflow: scroll;
-    
-
+    overflow: scroll;  
 }
 .direcciones_sucursales {
     list-style-type: none;
+}
+@media (max-width:480px) {
+    .direcciones {
+        height: 300px;
+        width: 620px;
+    }
 }
 .mapa {
     grid-area: mapa;
     margin-right: 0px;
     margin-top: 20px;
     
-    
+}
+@media (max-width:480px) {
+    .mapa {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media (max-width:480px) {
+    footer {
+        width: 700px;
+        height: 100px;
+    }
 }
 
 .h.contacto {
