@@ -334,45 +334,32 @@ list-style-type: none;
     list-style-type: none;
     color: #463f3a;
 }
-
 .secciones_productos {
-  display: grid;
-  grid-template-areas: 
-  "seccion1-p"
-  "seccion2-p"
-  "seccion3-p";  
+    background-color: #f4f3ee;
 }
-.seccion1-p {
-    grid-area: seccion1-p;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 700px;
-    padding: 10px;
-    margin: 10px;
+.container {
     background-color: #e0afa0;
-}
-.postres {
- display: flex;
- justify-content: center;
- color: #bcb8b1;
-}
-.seccion2-p {
-    grid-area: seccion2-p;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
+    width: 4000px;
+    border-style: groove;
     
 }
-.seccion3-p {
- grid-area: seccion3-p;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- 
+.card {
+    margin: 10px;
+    
+}
+.container h2 {
+    display: flex;
+    justify-content: center;
+    color: #463f3a;
+    padding-top: 20px;
+}
+.card-body {
+    background-color: #bcb8b1;
+}
+.card-text {
+    color: #463f3a;
+    font-family: 'Playfair Display', serif;
+
 }
 header section {
         display: flex;
@@ -410,6 +397,8 @@ header section {
         list-style-type: none;
         color: #463f3a;
 }
+
+
 .secciones_sucursales {
     margin-top: 10px;
     background-color: #f4f3ee;
@@ -448,6 +437,9 @@ header section {
     height: 40px;
     width: 600px;
     font-size: 18px;
+}
+.bi-searc {
+    background-color: #bcb8b1;
 }
 
 
@@ -658,4 +650,9 @@ header section {
 .boton_enviar {
     height: 30px;
     width: 50px;
+}
+.logo_sucursales-pie {
+   height: 80px;
+   width: 80px;
+   padding:10px;
 }
