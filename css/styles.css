@@ -344,13 +344,11 @@ list-style-type: none;
 .container {
     background-color: #e0afa0;
     width: 4000px;
+    height: 750px;
     border-style: groove;
     
 }
-.card {
-    margin: 10px;
-    
-}
+
 .container h2 {
     display: flex;
     justify-content: center;
@@ -364,6 +362,19 @@ list-style-type: none;
     color: #463f3a;
     font-family: 'Playfair Display', serif;
 
+}
+.tarjetita {
+    margin: 10px;
+    transition: transform 1s;
+    background-color: #463f3a;
+    color: #f4f3ee;
+}
+.tarjetita:hover {
+    transform: scale(1.1)    
+}
+.tarjetita .card-text:hover {
+    background-color: #463f3a;
+    color: #f4f3ee;
 }
 
 .lista_pie-pr {
@@ -697,3 +708,36 @@ color:#463f3a
    width: 80px;
    padding:10px;
 }
+/*index*/
+.scale-up-ver-top {
+    animation:scale-up-ver-top .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 3ms;
+    
+}
+ 
+@keyframes scale-up-ver-top{0%{transform:scaleY(.4);transform-origin:100% 0}100%{transform:scaleY(1);transform-origin:100% 0}}
+ 
+ .scale-up-hor-left{
+    animation:scale-up-hor-left .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 8ms;
+}
+
+    @keyframes scale-up-hor-left{0%{transform:scaleX(.4);transform-origin:0 0}100%{transform:scaleX(1);transform-origin:0 0}}
+
+.scale-up-hor-center{
+    animation:scale-up-hor-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 10ms;
+}
+ 
+    @keyframes scale-up-hor-center{0%{transform:scaleX(.4)}100%{transform:scaleX(1)}}
+ 
+ .scale-up-ver-bottom{
+    animation:scale-up-ver-bottom .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 13ms;
+}
+
+    @keyframes scale-up-ver-bottom{0%{transform:scaleY(.4);transform-origin:0 100%}100%{transform:scaleY(1);transform-origin:0 100%}}
+
+    /*sabores*/
+
+  
