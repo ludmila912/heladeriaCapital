@@ -128,7 +128,11 @@ padding: 10px;color: #463f3a;
     display: flex;
     gap: 20px;
     list-style-type: none;
+    color: #463f3a;
+    
+    
 }
+
 header section {
     display: flex;
     background-color: #463f3a;
@@ -361,6 +365,20 @@ list-style-type: none;
     font-family: 'Playfair Display', serif;
 
 }
+
+.lista_pie-pr {
+    display: flex;
+    padding: 10px;
+    color: #463f3a;
+    text-decoration: none;
+}
+.items_pie-pr {
+    
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    color: #463f3a;
+}
 header section {
         display: flex;
         flex-wrap: wrap; 
@@ -438,8 +456,12 @@ header section {
     width: 600px;
     font-size: 18px;
 }
-.bi-searc {
+.lupa {
+    height: 80px;
+    width: 80px;
+    color: #463f3a;
     background-color: #bcb8b1;
+    padding: 5px;
 }
 
 
@@ -507,7 +529,7 @@ header section {
 }
 .secciones_contacto {
     background-color:#f4f3ee;
-    height: 650px;
+    height: 700px;
 }
 .sections {
     height: 100px;
@@ -519,7 +541,7 @@ header section {
     "s2_c s2_c s2_c .... .... s7_c  s7_c"
     "s3_c s3_c s3_c .... .... s8_c  s8_c"
     "s4_c s4_c s4_c .... .... s9_c  s9_c"
-    ".... .... .... .... .... s10_c s10_c";
+    "s4_c s4_c s4_c.... .... s10_c s10_c";
     font-size: 18px;
     
     
@@ -558,6 +580,7 @@ header section {
     grid-area: s4_c;
     margin: 10px;
     padding: 10px;
+    padding-top: 40px;
     border-style: groove;
     color: #463f3a;
     background-color: #e0afa0;
@@ -615,10 +638,12 @@ header section {
     justify-content: center;
     margin-right: 80px;
     margin-top: 10px;
+    margin-bottom: 5px;
     margin-left: 20px;
     padding: 10px;
     color: #463f3a;
     background-color: #e0afa0;
+    height: 70px;
     
 }
 .s10_c {
@@ -626,12 +651,28 @@ header section {
     display: flex;
     justify-content: center;
     margin-right: 80px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 20px;
     padding: 10px;
     color: #463f3a;
     background-color: #e0afa0;
     
+}
+.ig {
+    padding-left: 5px;
+    color:#463f3a
+}
+.f {
+    padding-left: 5px;
+    color:#463f3a
+}
+.tk {
+padding-left: 5px;
+color:#463f3a
+}
+.wp {
+padding-left: 5px;
+color:#463f3a
 }
 .h2_c {
     display: flex;
