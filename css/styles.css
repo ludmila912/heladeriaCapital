@@ -12,7 +12,7 @@ header section {
     display: flex;
     flex-wrap: wrap; 
    background-color: #463f3a;
-    gap: 700px;
+    
     font-family: 'Playfair Display', serif;
     color: #e0afa0;
     height: 200px;
@@ -24,6 +24,7 @@ header img {
 }
 header h1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .section2-h {
@@ -49,37 +50,40 @@ header h1 {
     color: #463f3a;
 }
 @media (max-width:1200px) {
-header{ 
-display: flex;
-flex-wrap: wrap;
-gap: 500px;
+header img {
+    height: 200px;
 }
 header h1 {
-    align-items: center;
+    display: flex;
+align-items: normal;
 }
 .lista {
-    display: flex;
-    flex-wrap: wrap;
+    gap:50px;
 }
 }
 @media (max-width:480px) {
-    header {
-        display: flex;
-        gap: 50px;
-        width: 480px;
-    }
+   header section {
+    width: 100%;
+   }
     header img {
-        height: 100px;
+        height: 80px;
     }
+    header h1 {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+    .sectin2-h {
+        width: 100%;
+    }
+    
     .lista {
         display: flex;
-        gap: 10px;
+        gap: 2px;
     }
 }
 .main_index {
-    
     background-color: #f4f3ee;
-    
 }
 .carousel-item {
     height: 550px;
@@ -88,8 +92,6 @@ header h1 {
     background-color: #463f3ad0;
     color: #e0afa0;
     font-size: 20px;
-
-
 }
 .items a {
     color:#463f3a;
@@ -102,16 +104,14 @@ header h1 {
     color: #e0afa0;
 }
  .contenedor {
-    
     background-color: #e0afa0;
     color: #463f3a;
     margin: 20px;
     padding: 20px;
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    
-    
+    font-size: 18px;  
  }
+
 h3 {
     display: flex;
     justify-content: center;
@@ -126,8 +126,10 @@ h3 {
 .imagenes_2 {
     width: 100%;
     min-width: 300px;
-    padding: 10px;
-    
+    padding: 10px; 
+}
+@media (max-width:480px) {
+ 
 }
 footer {
     background-color: #bcb8b1;
@@ -168,19 +170,7 @@ header section {
     font-family: 'Playfair Display', serif;
     color: #e0afa0;
 }
-@media (max-width:480px) {
-    .h.sabores {
-        gap: 50px;
-        height: 200px;
-        width: 700px;
-    }
-    .logo.h.sabores {
-        height: 200px;
-    }
-    .titulo_ {
-        height: 50px;
-    }
-}
+
 .header h1 {
     padding-top: 50px;
     font-size: 70px;
@@ -211,6 +201,20 @@ header section {
         list-style-type: none;
         color: #463f3a;
 }
+@media (max-width:1200px) {
+    header img {
+        height: 200px;
+    }
+    header h1 {
+        display: flex;
+    align-items: normal;
+    }
+    .section2-h-s {
+        margin-left: 100px;
+    }
+   
+    
+    }
 @media (max-width:480px) {
     .menu_sabores {
         width: 485px;
