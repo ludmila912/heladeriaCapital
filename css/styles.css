@@ -7,7 +7,7 @@
    
 
 }
-
+/*index*/
 header section {
     display: flex;
     flex-wrap: wrap; 
@@ -62,24 +62,23 @@ align-items: normal;
 }
 }
 @media (max-width:480px) {
-   header section {
-    width: 100%;
-   }
     header img {
-        height: 80px;
+        height: 150px;
     }
     header h1 {
-        display: flex;
-        align-items: center;
-        font-size: 40px;
+        font-size: 30px;
     }
     .sectin2-h {
-        width: 100%;
+        width: 400px;
+        height: 50px;
+        margin-left: 35px;
     }
     
     .lista {
         display: flex;
+        flex-direction: row;
         gap: 2px;
+        font-size: 15px;
     }
 }
 .main_index {
@@ -162,7 +161,7 @@ padding: 10px;color: #463f3a;
     
     
 }
-
+/*sabores*/
 header section {
     display: flex;
     background-color: #463f3a;
@@ -206,23 +205,27 @@ header section {
         height: 200px;
     }
     header h1 {
-        display: flex;
-    align-items: normal;
+       display: flex;
+       justify-content: center;
     }
     .section2-h-s {
-        margin-left: 100px;
-    }
+        margin-left: 250px;
    
-    
     }
+}
 @media (max-width:480px) {
-    .menu_sabores {
-        width: 485px;
-    margin-left: 0px;
-    margin-right: 0px;
-
-
+    header section {
+        width: 930px;
+        gap: 20px;
     }
+    .menu_sabores {
+       margin-left: 150px;
+    }
+    .lista_sabores {
+       
+        padding-left: 0px;
+    }
+
 }
 
 .secciones {
@@ -288,7 +291,7 @@ list-style-type: none;
         "section2-s"
         "section3-s"
         "section4-s";
-        width: 490px;
+        width: 950px;
         height: 2000px;  
     }
     .seccion1-s {
@@ -314,6 +317,11 @@ list-style-type: none;
         height: 700px;
         margin: 0px;
         padding: 0px;
+    }
+    .choco-list-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 .titulo-sec {
@@ -347,6 +355,8 @@ list-style-type: none;
     display: flex;
     justify-content: center;
 }
+
+/*productos*/
 .section2-h-p {
     width: 700px;
     height: 70px;
@@ -369,6 +379,11 @@ list-style-type: none;
     padding-top: 10px;
     list-style-type: none;
     color: #463f3a;
+}
+@media (max-width:1200px) {
+    .section2-h-p {
+        margin-left: 250px;
+    }
 }
 .secciones_productos {
     background-color: #f4f3ee;
@@ -422,6 +437,7 @@ list-style-type: none;
     list-style-type: none;
     color: #463f3a;
 }
+/*sucursales*/
 header section {
         display: flex;
         flex-wrap: wrap; 
@@ -458,7 +474,14 @@ header section {
         list-style-type: none;
         color: #463f3a;
 }
-
+@media (max-width:480px) {
+    header section {
+        width: 620px;
+    }
+    .section2-h-s {
+        margin-left: 200px;
+    }
+}
 
 .secciones_sucursales {
     margin-top: 10px;
@@ -545,6 +568,7 @@ header section {
         height: 100px;
     }
 }
+/*contacto*/
 .titulo- {
     font-size: 40px
 }
@@ -570,10 +594,44 @@ header section {
     list-style-type: none;
     color: #463f3a;
 }
+@media (max-width:1200px) {
+    .search2-h-c {
+        margin-left: 250px;
+    } 
+}
+@media (max-width:480px) {
+    header section {
+      display: flex;
+      gap: 100px;
+      height: 150px;
+      width: 620px;
+    }  
+    header .logo_sucursales {
+      height: 150px;
+    }
+    .titulo- {
+        padding-top: 40px;
+      font-size: 30px;
+    }
+    .section2-h-c {
+        margin-left: 75px;
+        height: 50px;
+        width: 460px;
+    }
+    .menu_contacto {
+        font-size: 15px;
+    }
+    .lista_contacto {
+        padding-top: 5px;
+        padding-left: 5px;
+
+    }
+  }
 .secciones_contacto {
     background-color:#f4f3ee;
     height: 700px;
 }
+
 .sections {
     height: 100px;
     width: 1000;
@@ -585,7 +643,7 @@ header section {
     "s3_c s3_c s3_c .... .... s8_c  s8_c"
     "s4_c s4_c s4_c .... .... s9_c  s9_c"
     "s4_c s4_c s4_c.... .... s10_c s10_c";
-    font-size: 18px;
+    font-size:20;
     
     
 
@@ -728,6 +786,27 @@ color:#463f3a
     font-size: 18px;
     
 }
+@media (max-width: 480px) {
+    .secciones_contacto {
+        height: 1050px;
+        width: 620px;
+    }
+    .sections {
+        grid-template-areas: 
+        "s1_c s1_c s1_c"
+        "s1_c s1_c s1_c"
+        "s2_c s2_c s2_c"
+        "s3_c s3_c s3_c"
+        "s4_c s4_c s4_c"
+        "s4_c s4_c s4_c"
+        "s5_c s5_c s5_c"
+        "s6_c s6_c s6_c"
+        "s7_c s7_c s7_c"
+        "s8_c s8_c s8_c"
+        "s9_c s9_c s9_c"
+        "s10_c s10_c s10_c";
+    }
+}
 .pie_c {
     margin-top: 10px;
 }
@@ -740,7 +819,12 @@ color:#463f3a
    width: 80px;
    padding:10px;
 }
-/*index*/
+@media (max-width:480px) {
+    .pie_c {
+        width: 620px;
+    }
+}
+
 .scale-up-ver-top {
     animation:scale-up-ver-top .4s cubic-bezier(.39,.575,.565,1.000) both;
     animation-delay: 5ms;
