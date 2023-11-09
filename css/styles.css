@@ -215,10 +215,6 @@ header section {
        display: flex;
        justify-content: center;
     }
-    .section2-h-s {
-        
-    }
-    
 }
 @media (max-width:480px) {
     header section {
