@@ -18,11 +18,11 @@ header section {
     height: 200px;
 }
 
-header img {
+.img-index {
  height: 200px;
  
 }
-header h1 {
+.titulo-index {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -33,53 +33,54 @@ header h1 {
     background-color: #bcb8b1;
     height: 70px;
 }
-.menu_principal {
+.menu_contacto{
     
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     
 }
-.lista {
+.lista-contacto{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 250px;
+    margin-left: 480px;
     padding-bottom: 10px;
-    gap: 200px;
+    gap: 90px;
     list-style-type: none;
     color: #463f3a;
 }
 @media (max-width:1200px) {
-header img {
-    height: 200px;
+.img-index {
+    height: 100px;
 }
-header h1 {
+.titulo-index {
     display: flex;
-align-items: normal;
+    justify-content: center;
 }
-.lista {
+.lista-contacto {
+    margin-left: 200px;
     gap:50px;
 }
 }
 @media (max-width:480px) {
-    header img {
-        height: 150px;
+    .titulo-index {
+        align-items:center;
+        font-size: 25px;
     }
-    header h1 {
-        font-size: 30px;
+    .section2-h {
+        width: 450px;
+        padding-left: 2px;
+        margin-left: 15px;
     }
-    .sectin2-h {
-        width: 400px;
-        height: 50px;
-        margin-left: 35px;
-    }
-    
-    .lista {
+    .lista-contacto {
         display: flex;
         flex-direction: row;
-        gap: 2px;
-        font-size: 15px;
+        margin-left: 0px;
+        padding-top: 10px;
+        padding-left: 10px;
+        gap: 0px;
     }
+    
 }
 .main_index {
     background-color: #f4f3ee;
@@ -128,7 +129,10 @@ h3 {
     padding: 10px; 
 }
 @media (max-width:480px) {
- 
+ .carousel-caption {
+    width: 90px;
+    font-size: 15px;
+ }
 }
 footer {
     background-color: #bcb8b1;
@@ -169,6 +173,9 @@ header section {
     font-family: 'Playfair Display', serif;
     color: #e0afa0;
 }
+.logo-h-sabores {
+    height: 200px;
+}
 
 .header h1 {
     padding-top: 50px;
@@ -185,7 +192,7 @@ header section {
     background-color: #bcb8b1;
 }
 
-.menu_sabores {
+.menu_productos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -193,7 +200,7 @@ header section {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
 }
-.lista_sabores {
+.lista_productos {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -201,31 +208,28 @@ header section {
         color: #463f3a;
 }
 @media (max-width:1200px) {
-    header img {
-        height: 200px;
+    .logo-h-sabores {
+        height: 100px;
     }
     header h1 {
        display: flex;
        justify-content: center;
     }
     .section2-h-s {
-        margin-left: 250px;
-   
+        
     }
+    
 }
 @media (max-width:480px) {
     header section {
         width: 930px;
         gap: 20px;
     }
-    .menu_sabores {
-       margin-left: 150px;
+    .header img {
+        height: 150px;
     }
-    .lista_sabores {
-       
-        padding-left: 0px;
-    }
-
+    
+    
 }
 
 .secciones {
@@ -291,7 +295,7 @@ list-style-type: none;
         "section2-s"
         "section3-s"
         "section4-s";
-        width: 950px;
+        width: 480px;
         height: 2000px;  
     }
     .seccion1-s {
@@ -336,6 +340,7 @@ list-style-type: none;
 @media (max-width:480px) {
     .footer-s {
         width: 480px;
+        height: 150px;
     }
     .pie {
         height: 20px;
@@ -347,7 +352,10 @@ list-style-type: none;
         padding-top: 20px;
     }
     .lista_pie {
-        gap: 5px;
+        display: flex;
+        flex-direction:column;
+        padding-top: 0px;
+        gap: 2px;
         font-size: 15px;
     }
 }
@@ -357,6 +365,9 @@ list-style-type: none;
 }
 
 /*productos*/
+.logo_productos {
+    height: 200px;
+}
 .section2-h-p {
     width: 700px;
     height: 70px;
@@ -384,6 +395,28 @@ list-style-type: none;
     .section2-h-p {
         margin-left: 250px;
     }
+    .lista_contacto {
+        padding-left: 35px;
+    }
+}
+@media (max-width:480px) {
+    header section {
+        width: 480px;
+    }
+    .logo_productos {
+        height: 100px;
+    }
+.section2-h-p {
+    width: 400px;
+    margin-left: 30px;
+}
+.menu_productos {
+    font-size: 15px;
+}
+.lista_productos {
+    gap: 2px;
+    padding-left: 1px
+}
 }
 .secciones_productos {
     background-color: #f4f3ee;
@@ -423,20 +456,37 @@ list-style-type: none;
     background-color: #463f3a;
     color: #f4f3ee;
 }
+@media (max-width:480px) {
+    .secciones_productos {
+        width: 480px;
+    }
+    .container {
+        width: 400px;
+        height: 1700px;
+    }
+}
 
-.lista_pie-pr {
+.lista_pie{
     display: flex;
     padding: 10px;
+    padding-left: 20px;
     color: #463f3a;
     text-decoration: none;
 }
-.items_pie-pr {
-    
+.items_pie-pr1 {
     display: flex;
-    gap: 10px;
+    padding-right: 10px;
     list-style-type: none;
     color: #463f3a;
 }
+.items_pie-pr2 {
+    display: flex;
+    padding-left: 10px;
+    list-style-type: none;
+    color: #463f3a;
+}
+
+
 /*sucursales*/
 header section {
         display: flex;
@@ -447,7 +497,9 @@ header section {
         font-family: 'Playfair Display', serif;
         color: #e0afa0;
     }
-
+.logo_sucursales {
+    height: 200px;
+}
 
 .imagenes_p {
     width: 300px;
@@ -478,8 +530,19 @@ header section {
     header section {
         width: 620px;
     }
+    
     .section2-h-s {
-        margin-left: 200px;
+        width: 400px;
+        margin-left: 30px;
+    }
+    .menu_sabores {
+        font-size: 10px;
+    }
+    .lista_sabores {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        gap: 5px;
     }
 }
 
@@ -508,8 +571,8 @@ header section {
     "mapa"
     "mapa"
     "mapa";
-    width: 700px;
-    height: 600px;
+    width: 480px;
+    height: 900px;
    } 
 }
 .search {
@@ -529,7 +592,11 @@ header section {
     background-color: #bcb8b1;
     padding: 5px;
 }
-
+@media (max-width:480px) {
+    .buscador {
+        width:350px;
+    }
+}
 
 .direcciones {
     grid-area: direcciones;
@@ -547,7 +614,7 @@ header section {
 @media (max-width:480px) {
     .direcciones {
         height: 300px;
-        width: 620px;
+        width: 400px;
     }
 }
 .mapa {
@@ -556,16 +623,26 @@ header section {
     margin-top: 20px;
     
 }
-@media (max-width:480px) {
-    .mapa {
-        height: 200px;
-        width: 200px;
+@media (max-width:1200px) {
+    .map-responsive iframe {
+        height: 650px;
+        width: 400px;
+        margin-left: 35px;
+        padding-top: 40px;
+        padding-right: 10px;
     }
+    }
+@media (max-width:480px) {
+.map-responsive iframe {
+    height: 400px;
+    width: 400px;
+    margin-left: 35px;
+}
 }
 @media (max-width:480px) {
     footer {
-        width: 700px;
-        height: 100px;
+        width: 480px;
+        height: 150px;
     }
 }
 /*contacto*/
@@ -595,28 +672,34 @@ header section {
     color: #463f3a;
 }
 @media (max-width:1200px) {
+    .titulo- {
+        align-items: center;
+    }
     .search2-h-c {
         margin-left: 250px;
     } 
+    .lista-contacto {
+        padding-left: 35px;
+    }
 }
 @media (max-width:480px) {
     header section {
       display: flex;
       gap: 100px;
       height: 150px;
-      width: 620px;
+      width: 480px;
     }  
     header .logo_sucursales {
-      height: 150px;
+      height: 100px;
     }
     .titulo- {
         padding-top: 40px;
       font-size: 30px;
     }
     .section2-h-c {
-        margin-left: 75px;
+        margin-left: 35px;
         height: 50px;
-        width: 460px;
+        width: 400px;
     }
     .menu_contacto {
         font-size: 15px;
@@ -789,7 +872,7 @@ color:#463f3a
 @media (max-width: 480px) {
     .secciones_contacto {
         height: 1050px;
-        width: 620px;
+        width: 480px;
     }
     .sections {
         grid-template-areas: 
@@ -820,9 +903,12 @@ color:#463f3a
    padding:10px;
 }
 @media (max-width:480px) {
+
     .pie_c {
-        width: 620px;
+        width: 480px;
+        height: 150px;
     }
+    
 }
 
 .scale-up-ver-top {
