@@ -1,0 +1,38 @@
+@media (max-width:1200px) {
+    .img-index {
+        height: 100px;
+    }
+    .titulo-index {
+        display: flex;
+        justify-content: center;
+    }
+    .lista-contacto {
+        margin-left: 200px;
+        gap:50px;
+    }
+    }
+    @media (max-width:480px) {
+        .titulo-index {
+            align-items:center;
+            font-size: 25px;
+        }
+        .section2-h {
+            width: 450px;
+            padding-left: 2px;
+            margin-left: 15px;
+        }
+        .lista-contacto {
+            display: flex;
+            flex-direction: row;
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            gap: 0px;
+        }
+    }
+    @media (max-width:480px) {
+        .carousel-caption {
+           width: 90px;
+           font-size: 15px;
+        }
+       }

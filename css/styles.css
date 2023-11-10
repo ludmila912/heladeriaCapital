@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-   
-
+}
+*::selection {
+    background-color: #463f3a;
+color: #f4f3ee;
 }
 /*index*/
 header section {
@@ -162,8 +164,6 @@ padding: 10px;color: #463f3a;
     gap: 20px;
     list-style-type: none;
     color: #463f3a;
-    
-    
 }
 /*sabores*/
 header section {

@@ -1,0 +1,32 @@
+footer {
+    background-color: #bcb8b1;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+
+    .pie {
+        display: flex;
+        margin-top: 10px;
+        padding: 10px;color: #463f3a;
+
+        .pie ul {
+            list-style-type: none;
+        }
+        }
+        .menu_pie {
+    
+            padding: 10px;
+            color: #463f3a;
+            text-decoration: none;
+
+            .lista_pie {
+                display: flex;
+                gap: 20px;
+                list-style-type: none;
+                color: #463f3a;
+            }
+            
+        }
+}

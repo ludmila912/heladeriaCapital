@@ -1,0 +1,30 @@
+.contenedor {
+    background-color: #e0afa0;
+    color: #463f3a;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;  
+
+    .carousel-item {
+        height: 550px;
+
+        .carousel-caption  {
+            background-color: #463f3ad0;
+            color: #e0afa0;
+            font-size: 20px;
+        }
+        .imagenes {
+            min-height: 400px;
+            width: 100%;
+            padding: 10px;
+            
+        }
+        .imagenes_2 {
+            width: 100%;
+            min-width: 300px;
+            padding: 10px; 
+        }
+    }
+
+ }
