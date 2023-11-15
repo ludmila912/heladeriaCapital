@@ -8,13 +8,11 @@ header section {
 
     .img-index {
         height: 200px;
-        
        }
-
        .titulo-index {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
     }
 }
 .section2-h {
